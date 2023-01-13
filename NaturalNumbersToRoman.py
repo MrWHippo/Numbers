@@ -31,12 +31,13 @@ else:
     for x in reversed(RomanBNums):
         if x in Roman:
             answer += RomanBNums[x]
-            Roman.replace(x, "")
+            Roman = Roman.replace(x, '')
 
-    print(Roman)
+    
+    Romanlist = list(Roman)
+
+    for x in reversed(RomanNums):
+        count = Romanlist.count(x)
+        answer += (RomanNums[x] * count)
+
     print(answer)
-    Romanlist = list[Roman]
-
-    #for x in reversed(RomanNums):
-    #    count = Romanlist.count(x)
-    #    answer += (RomanNums[x] * count)
