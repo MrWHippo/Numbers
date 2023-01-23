@@ -20,8 +20,8 @@ class fraction:
 
         answerfraction = (fraction(answer, den))
         answerfraction.__simplify()
-        #answerfraction.print()
-        return answerfraction
+        answerfraction.print()
+        
 
     def add(self, otherfraction):
         if self.den == otherfraction.den:
@@ -38,8 +38,8 @@ class fraction:
 
         answerfraction = (fraction(answer, den))
         answerfraction.__simplify()
-        #answerfraction.print()
-        return answerfraction
+        answerfraction.print()
+        
 
 
     def multi(self, otherfraction):
@@ -47,8 +47,8 @@ class fraction:
         answer = self.num * otherfraction.num
         answerfraction = (fraction(answer, den))
         answerfraction.__simplify()
-        #answerfraction.print()
-        return answerfraction
+        answerfraction.print()
+        
 
 
     def div(self, otherfraction):
@@ -60,8 +60,8 @@ class fraction:
         answer = self.num * otherfraction.num
         answerfraction = (fraction(answer, den))
         answerfraction.__simplify()
-        #answerfraction.print()
-        return answerfraction
+        answerfraction.print()
+        
 
 
     def __simplify(self):
@@ -81,20 +81,20 @@ class fraction:
         
 
 
-#num, den = input("Enter fraction (a/b): ").split("/")
-#num2, den2 = input("Enter fraction (a/b): ").split("/")
+num, den = input("Enter fraction (a/b): ").split("/")
+num2, den2 = input("Enter fraction (a/b): ").split("/")
 
-#fract1 = fraction(num, den)
-#fract2 = fraction(num2, den2)
+fract1 = fraction(num, den)
+fract2 = fraction(num2, den2)
 
-#option = input("Enter operation(+, -, * or /): ")
-#if option == "+":
-#    fract1.add(fract2)
-#elif option == "/":
-#    fract1.div(fract2)
-#elif option == "*":
-#    fract1.multi(fract2)
-#elif option == "-":
-#    fract1.sub(fract2)
-#else:
-#    print("Error, Invalid operation.")
+option = input("Enter operation(+, -, * or /): ")
+if option == "+":
+    fract1.add(fract2)
+elif option == "/":
+    fract1.div(fract2)
+elif option == "*":
+    fract1.multi(fract2)
+elif option == "-":
+    fract1.sub(fract2)
+else:
+    print("Error, Invalid operation.")
